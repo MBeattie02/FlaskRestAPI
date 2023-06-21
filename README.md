@@ -17,4 +17,17 @@
 
  - python3 -m venv .venv
  - docker build . -t python-rest
- - docker run -dp 5000:5000 -w /app -v "$(pwd):/app" python-rest 
+ - docker run -dp 5000:5000 -w /app -v "$(pwd):/app" python-rest
+
+## Docker 
+
+ - [👉Docker Hub 🐳](https://hub.docker.com/r/mabeatti/flask-rest-api) 
+ - Query in Postman
+ - use http://127.0.0.1:8000/swagger-ui to get detailed explanation of all endpoints
+
+ - Docker commands
+
+ - docker build . -t flask-rest-api
+ - docker tag flask-rest-api mabeatti/flask-rest-api
+ - docker run -p 8000:8000 mabeatti/flask-rest-api
+ - docker pull mabeatti/flask-rest-api:latest
