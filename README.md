@@ -29,5 +29,5 @@
 
  - docker build . -t flask-rest-api
  - docker tag flask-rest-api mabeatti/flask-rest-api
- - docker run -p 8000:8000 mabeatti/flask-rest-api
+ - docker run --rm -it -p 8080:5000 mabeatti/flask-rest-api
  - docker pull mabeatti/flask-rest-api:latest
